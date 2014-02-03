@@ -1,0 +1,74 @@
+
+body {
+  background-color: white;
+}
+
+.batman {
+  width: 370px;
+  margin: 200px auto 0;
+}
+
+.head {
+  width: 375px;
+  height: 400px;
+  position: relative;
+  position: relative;
+}
+
+.cowl {
+  height: 100%;
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 200px 200px 0px 0px/100px;
+}
+
+.cowl:after, .cowl:before {
+  content: '';
+  position: absolute;
+  border: 150px solid transparent;
+  border-top-width: 80px;
+  height:200px;
+  width:900px;
+}
+
+.cowl:after {
+  right: -4px;
+  border-right: 30px solid black;
+  border-left-width: 0;
+  top: -50px;
+  transform: rotate(2deg);
+}
+
+.cowl:before {
+  left: -7px;
+  border-left: 30px solid black;
+  border-right-width: 0;
+  transform: rotate(-5deg);
+  top: -70px;
+}
+
+.eyes {
+  width: 100%;
+  z-index: 2;
+  margin-top: -90px;
+}
+
+.eye {
+  position: absolute;
+}
+
+.eye-left {
+  left: 65px;
+  transform: rotate(11deg);
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 10px solid white;
+}
+
+.eye-right {
+  right: 45px;
+  transform: rotate(-12.5deg);
+  border-left: 40px solid transparent;
+  border-right: 45px solid transparent;
+  border-top: 13px solid white;
+}
